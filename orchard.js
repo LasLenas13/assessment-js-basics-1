@@ -147,11 +147,15 @@ console.log(days)
 
 // CODE HERE
 
-let fujiTons =
-let galaTons =
-let pinkTons =
+let fujiTons = 0
+// let galaTons = 0
+// let pinkTons = 0
 
+for (var i=0; i<fujiAcres.length; i++) {
+        fujiTons = fujiAcres[i] * 6.5;
+    } 
 
+console.log(fujiTons)
 
 
 
