@@ -4,12 +4,13 @@
 //CODE HERE 
 
 let myName = "christian"
+
 //////////////////PROBLEM 2////////////////////
 /* Create a variable called 'faveNum' with a value that is your favorite number. */
 
 //CODE HERE
 
-const faveNum = 86
+let faveNum = 86
 
 //////////////////PROBLEM 3////////////////////
 /* Create a variable called 'lovesCode' and assign it a boolean value. */
@@ -27,10 +28,10 @@ const lovesCode = true
 
 //CODE HERE
 
-if(faveNum = 13){
+if(faveNum === 13){
   console.log("lucky 13!")
 } else{
-  console.log("not luck 13")
+  console.log("not lucky 13")
 }
 
 //////////////////PROBLEM 5////////////////////
@@ -39,3 +40,7 @@ if(faveNum = 13){
 */
 
 //CODE HERE
+
+for(let i = 0; i < 5; i++){
+  console.log(faveNum[i])
+}
