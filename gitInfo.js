@@ -11,6 +11,8 @@
 
 //CODE HERE
 
+let gitDefinition = "From the Book: Git thinks of its data more like a series of snapshots of a miniature filesystem. With Git, every time you commit, or save the state of your project, Git basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots."
+
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,6 +20,8 @@
 */
 
 //CODE HERE
+
+let gitHubDefinition = "gitHub is a website/online service that stores these snapshots in repositories on a cloud server."
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -27,6 +31,8 @@
 
 //CODE HERE
 
+let gitInitDefinition = "This command intializes the repository. It is the first step."
+
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
@@ -35,6 +41,8 @@
 
 //CODE HERE
 
+let gitCloneDefinition = "This command creates a copy from the server."
+
 //////////////////PROBLEM 5////////////////////
 /*
     Create a variable called 'gitStatusDefinition'.  
@@ -42,6 +50,8 @@
 */
 
 //CODE HERE
+
+let gitStatusDefinition = "It allows you to verify what stage you are at in process. It provides feedback, in order to avoid mistakes."
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -54,6 +64,10 @@
 
 //CODE HERE
 
+let gitAddDefinition = "This command adds your current work in the file to the staging area. It also adds updates/changes to the file."
+
+let gitAddCode = "git add ."
+
 //////////////////PROBLEM 7////////////////////
 /*
     Create a variable called 'gitCommitDefinition'.  
@@ -65,6 +79,10 @@
 
 //CODE HERE
 
+let gitCommitDefinition = "This command does what it says, it commits the added changes to the respository. You need to be careful because you cannot uncommit, once committed."
+
+let gitCommitCode = "git commit -m 'message' "
+
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,3 +91,5 @@
 */
 
 //CODE HERE
+
+let gitPushDefinition = "This is the final command to push everything to gitHub to be stored."
