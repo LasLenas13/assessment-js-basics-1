@@ -225,3 +225,6 @@ console.log(fujiTons)
 */
 
 // CODE HERE
+
+
+let extraCredit = "I would suggest having the review go a little more in depth on some of the topics in the Orchard problem. For instance, while loops. I think it would be helpful to obtian more points in Orchard as well. Problem 4 really stumped me and it would be helpful to get more than 1 pt for just completing 3 problems in Orchard."
