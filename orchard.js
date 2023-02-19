@@ -31,9 +31,9 @@ const fujiAcres = [2, 3, 3, 2, 2, 2, 1]
 const galaAcres = [5, 2, 4, 3, 6, 2, 4]
 const pinkAcres = [1, 5, 4, 2, 1, 5, 4]
 
-const fujiPrice = .89 
-const galaPrice = .64
-const pinkPrice = .55
+// const fujiPrice = .89 
+// const galaPrice = .64
+// const pinkPrice = .55
 
 
 
@@ -147,17 +147,31 @@ console.log(days)
 
 // CODE HERE
 
-let fujiTons = 0
-// let galaTons = 0
-// let pinkTons = 0
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
+
+let tonsPerAcre = 6.5
 
 for (var i=0; i<fujiAcres.length; i++) {
-        fujiTons = fujiAcres[i] * 6.5;
+        dailyPicked = fujiAcres[i] * tonsPerAcre;
+        fujiTons.push(dailyPicked);
+    } 
+    
+    
+for (var i=0; i<galaAcres.length; i++) {
+        dailyPicked = galaAcres[i] * tonsPerAcre;
+        galaTons.push(dailyPicked);
     } 
 
+for (var i=0; i<pinkAcres.length; i++) {
+        dailyPicked = pinkAcres[i] * tonsPerAcre;
+        pinkTons.push(dailyPicked);
+    }
+
 console.log(fujiTons)
-
-
+console.log(galaTons)
+console.log(pinkTons)
 
 
 // PROBLEM 5
@@ -178,13 +192,27 @@ console.log(fujiTons)
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = 0
+let galaPounds = 0
+let pinkPounds = 0
 
+let lbsTon = 2000
 
+for(let i = 0; i < fujiTons.length; i++) {
+    fujiPounds = fujiPounds += fujiTons[i] * lbsTon;
+}
 
+for(let i = 0; i < galaTons.length; i++) {
+    galaPounds = galaPounds += galaTons[i] * lbsTon;
+}
 
+for(let i = 0; i < pinkTons.length; i++) {
+    pinkPounds = pinkPounds += pinkTons[i] * lbsTon;
+}
+
+console.log(fujiPounds)
+console.log(galaPounds)
+console.log(pinkPounds)
 
 
 // PROBLEM 6
@@ -205,13 +233,17 @@ console.log(fujiTons)
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+const fujiPrice = .89 
+const galaPrice = .64
+const pinkPrice = .55
 
+let fujiProfit = fujiPounds * fujiPrice
+let galaProfit = galaPounds * galaPrice
+let pinkProfit = pinkPounds * pinkPrice
 
-
-
+console.log("$" + fujiProfit)
+console.log("$" + galaProfit)
+console.log("$" + pinkProfit)
 
 
 // PROBLEM 7
@@ -226,5 +258,8 @@ console.log(fujiTons)
 
 // CODE HERE
 
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+
+console.log(totalProfit)
 
 let extraCredit = "I would suggest having the review go a little more in depth on some of the topics in the Orchard problem. For instance, while loops. I think it would be helpful to obtian more points in Orchard as well. Problem 4 really stumped me and it would be helpful to get more than 1 pt for just completing 3 problems in Orchard."
